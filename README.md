@@ -18,7 +18,10 @@ Replace your API key in the code:
 API_KEY = "YOUR_API_KEY" Run the Project python weather.py Example Output Enter city name: Hyderabad
 
 Weather Details
-City: Hyderabad Temperature: 31°C Humidity: 60% Condition: Clear Sky
+
+City: Hyderabad Temperature: 31°C 
+
+Humidity: 60% Condition: Clear Sky
 
 Sample Code:
 
@@ -36,20 +39,23 @@ data = response.json()
 
 if response.status_code == 200:
 
-  main = data["main"]
-  weather = data["weather"][0]
+    main = data["main"]
+    weather = data["weather"][0]
 
-  temperature = main["temp"]
-  humidity = main["humidity"]
-  description = weather["description"]
+    temperature = main["temp"]  
+    humidity = main["humidity"]  
+    description = weather["description"]
 
-  print("\nWeather Details")
-  print("-------------------")
-  print(f"City: {city}")
-  print(f"Temperature: {temperature}°C")
-  print(f"Humidity: {humidity}%")
-  print(f"Condition: {description}")
-else: print("Error:", data["message"]) Learning Outcomes
+    print("\nWeather Details")    
+    print("-------------------")    
+    print(f"City: {city}")    
+    print(f"Temperature: {temperature}°C")   
+    print(f"Humidity: {humidity}%")    
+    print(f"Condition: {description}")
+    
+else:print("Error:", data["message"])
+
+Learning Outcomes
 
 By completing this project, you will learn:
 
