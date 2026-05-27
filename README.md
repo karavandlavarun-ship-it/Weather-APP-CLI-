@@ -53,9 +53,7 @@ if response.status_code == 200:
     print(f"Humidity: {humidity}%")    
     print(f"Condition: {description}")
     
-else:print("Error:", data["message"])
-
-Learning Outcomes
+else: print("Error:", data["message"])Learning Outcomes
 
 By completing this project, you will learn:
 
